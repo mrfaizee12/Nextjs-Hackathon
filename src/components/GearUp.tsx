@@ -2,91 +2,106 @@ import Image from 'next/image';
 
 export default function GearUp() {
   return (
-    <section className="best-of-air w-full py-10 bg-white flex flex-col items-center md:flex-row md:items-start justify-between">
-      {/* Left Side Heading */}
-      <div className="w-full md:w-1/4 px-4 mb-6 md:mb-0">
-        <h2 className="text-xl md:text-2xl font-bold leading-tight">
-          Best of Air Max
-        </h2>
-      </div>
+    <section className="w-full py-10 bg-white">
+      <div className="container mx-auto px-4">
+        {/* Heading */}
+        <h2 className="text-2xl font-bold mb-6 text-center md:text-left">Gear Up</h2>
 
-      {/* Right Side Slider with Images */}
-      <div className="relative w-full md:w-3/4 flex items-center">
-        {/* First Slider Arrows (Left & Right) */}
-        <button className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full z-10">
-          &#8249;
-        </button>
+        {/* Sliders */}
+        <div className="flex flex-col md:flex-row justify-between">
+          {/* Men's Section */}
+          <div className="w-full md:w-1/2">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-semibold">Shop Men's</h3>
+              <div className="flex space-x-2">
+                <button className="p-2 bg-gray-200 rounded-full">
+                  &#8249;
+                </button>
+                <button className="p-2 bg-gray-200 rounded-full">
+                  &#8250;
+                </button>
+              </div>
+            </div>
 
-        <button className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full z-10">
-          &#8250;
-        </button>
+            <div className="flex gap-4 overflow-x-auto scrollbar-hide">
+              {/* Card 1 */}
+              <div className="flex-shrink-0 w-48">
+                <Image
+                  src="/images/gearman.png"
+                  alt="Men's Item"
+                  width={200}
+                  height={200}
+                  className="rounded-md"
+                />
+                <h4 className="text-sm font-semibold mt-2">Nike Dri-FIT ADV TechKnit Ultra</h4>
+                <p className="text-gray-600 text-sm">{`Men's Short-Sleeve Running Top`}</p>
+                <p className="text-lg font-bold mt-1">₹ 3,895</p>
+              </div>
 
-        {/* Cards Container */}
-        <div className="flex gap-4 overflow-x-auto scrollbar-hide w-full px-4 md:px-0">
-          {/* Image Card 1 */}
-          <div className="flex-shrink-0 w-[90%] md:w-1/4">
-            <Image
-              src="/images/gearman.png"
-              alt="Nike Air Max Pulse"
-              width={480}
-              height={480}
-              className="object-cover rounded-md w-full"
-            />
-            <h2 className="text-base font-semibold mt-2 text-center">Nike Air Max Pulse</h2>
-            <p className="text-sm text-gray-600 text-center">{`Men's Shoes`}</p>
-            <p className="text-lg font-bold mt-1 text-center">₹ 13 995</p>
+              {/* Card 2 */}
+              <div className="flex-shrink-0 w-48">
+                <Image
+                  src="/images/gearman2.png"
+                  alt="Men's Item"
+                  width={200}
+                  height={200}
+                  className="rounded-md"
+                />
+                <h4 className="text-sm font-semibold mt-2">Nike Dri-FIT Challenger</h4>
+                <p className="text-gray-600 text-sm">{ `Men's 18cm (approx.) 2-in-1 Shorts`}</p>
+                <p className="text-lg font-bold mt-1">₹ 2,495</p>
+              </div>
+            </div>
           </div>
 
-          {/* Image Card 2 */}
-          <div className="flex-shrink-0 w-[90%] md:w-1/4 relative">
-            <Image
-              src="/images/gearman2.png"
-              alt="Nike Air Max 97"
-              width={480}
-              height={480}
-              className="object-cover rounded-md w-full"
-            />
-            <h2 className="text-base font-semibold mt-2 text-center">Nike Air Max 97</h2>
-            <p className="text-sm text-gray-600 text-center">{`Women's Shoes`}</p>
-            <p className="text-lg font-bold mt-1 text-center">₹ 13 995</p>
+          {/* Women's Section */}
+          <div className="w-full md:w-1/2 mt-8 md:mt-0">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-lg font-semibold">{`Shop Women's`}</h3>
+              <div className="flex space-x-2">
+                <button className="p-2 bg-gray-200 rounded-full">
+                  &#8249;
+                </button>
+                <button className="p-2 bg-gray-200 rounded-full">
+                  &#8250;
+                </button>
+              </div>
+            </div>
 
-            {/* Second Slider Arrows on Top of Image 2 */}
-            <button className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full z-20">
-              &#8249;
-            </button>
-            <button className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black text-white p-2 rounded-full z-20">
-              &#8250;
-            </button>
-          </div>
+            <div className="flex gap-4 overflow-x-auto scrollbar-hide">
+              {/* Card 3 */}
+              <div className="flex-shrink-0 w-48">
+                <Image
+                  src="/images/gearwoman.png"
+                  alt="Women's Item"
+                  width={200}
+                  height={200}
+                  className="rounded-md"
+                />
+                <h4 className="text-sm font-semibold mt-2">Nike Dri-FIT ADV Run Division</h4>
+                <p className="text-gray-600 text-sm">{`Women's Long-Sleeve Running Top`}</p>
+                <p className="text-lg font-bold mt-1">₹ 5,295</p>
+              </div>
 
-          {/* Image Card 3 */}
-          <div className="flex-shrink-0 w-[90%] md:w-1/4">
-            <Image
-              src="/images/gearwoman.png"
-              alt="Nike Air Max 97 SE"
-              width={480}
-              height={480}
-              className="object-cover rounded-md w-full"
-            />
-            <h2 className="text-base font-semibold mt-2 text-center">Nike Air Max 97 SE</h2>
-            <p className="text-sm text-gray-600 text-center">Unisex Shoes</p>
-            <p className="text-lg font-bold mt-1 text-center">₹ 13 995</p>
-          </div>
-
-          {/* Image Card 4 */}
-          <div className="flex-shrink-0 w-[90%] md:w-1/4">
-            <Image
-              src="/images/gearwoman2.png"
-              alt="Nike Air Max Plus"
-              width={480}
-              height={480}
-              className="object-cover rounded-md w-full"
-            />
-            <h2 className="text-base font-semibold mt-2 text-center">Nike Air Max Plus</h2>
-            <p className="text-sm text-gray-600 text-center">{`Men's Shoes`}</p>
-            <p className="text-lg font-bold mt-1 text-center">₹ 13 995</p>
+              {/* Card 4 */}
+              <div className="flex-shrink-0 w-48">
+                <Image
+                  src="/images/gearwoman2.png"
+                  alt="Women's Item"
+                  width={200}
+                  height={200}
+                  className="rounded-md"
+                />
+                <h4 className="text-sm font-semibold mt-2">Nike Fast</h4>
+                <p className="text-gray-600 text-sm">
+                  {`Women's Mid-Rise 7/8 Running Leggings with Pockets`}
+                </p>
+                <p className="text-lg font-bold mt-1">₹ 3,795</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )};
+  );
+}
