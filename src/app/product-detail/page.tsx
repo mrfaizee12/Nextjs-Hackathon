@@ -3,9 +3,9 @@ import React from "react";
 
 const ProductDetail = () => {
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center px-8">
+    <div className="min-h-screen bg-white flex flex-col md:flex-row items-center justify-center px-8">
       {/* Product Image Section */}
-      <div className="flex-1 max-w-lg">
+      <div className="flex-1 max-w-lg mb-8 md:mb-0">
         <Image
           src="/images/br1.png" // Replace with your product image path
           alt="Nike Air Force 1 PLT.AF.ORM"
@@ -16,7 +16,7 @@ const ProductDetail = () => {
       </div>
 
       {/* Product Details Section */}
-      <div className="flex-1 max-w-lg pl-12">
+      <div className="flex-1 max-w-lg md:pl-12">
         <h1 className="text-3xl font-bold mb-4">Nike Air Force 1 PLT.AF.ORM</h1>
         <p className="text-gray-600 mb-6">
           {`Turn style on its head with this crafted take on the Air Jordan 1 Mid. Its "inside-out" inspired
