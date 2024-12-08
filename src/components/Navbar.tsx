@@ -63,12 +63,14 @@ export default function MainHeader() {
           </button>
 
           {/* Bag/Cart Icon */}
+          <Link href="/products">
           <button
             className="text-gray-600 hover:text-black focus:outline-none text-lg"
             aria-label="Cart"
           >
             <RiStore2Line />
           </button>
+          </Link>
         </div>
       </div>
     </header>

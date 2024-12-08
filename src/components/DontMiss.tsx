@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DontMiss() {
   return (
@@ -30,9 +31,9 @@ export default function DontMiss() {
         <p className="text-base text-gray-600 mb-6">
           Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.
         </p>
-        <button className="px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800">
+        <Link href="/products"><button className="px-6 py-3 bg-black text-white font-semibold rounded-md hover:bg-gray-800">
           Shop Now
-        </button>
+        </button></Link>
       </div>
     </section>
   );

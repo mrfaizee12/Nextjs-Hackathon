@@ -31,7 +31,7 @@ const Featured = () => {
               Cause everyone should know the feeling of running in that perfect pair.
             </p>
             <button className="mt-6 inline-flex items-center px-6 py-3 text-sm font-medium text-white bg-black rounded-md hover:bg-gray-800">
-              Find Your Shoe
+              Find Your Shop
             </button>
           </div>
         </div>
