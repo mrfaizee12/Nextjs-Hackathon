@@ -12,7 +12,7 @@ export default function GearUp() {
           {/* Men's Section */}
           <div className="w-full md:w-1/2">
             <div className="flex justify-between items-center mb-4">
-              <h3 className="text-lg font-semibold">Shop Men's</h3>
+              <h3 className="text-lg font-semibold">{`Shop Men's`}</h3>
               <div className="flex space-x-2">
                 <button className="p-2 bg-gray-200 rounded-full">
                   &#8249;
