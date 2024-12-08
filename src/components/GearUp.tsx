@@ -33,7 +33,7 @@ export default function GearUp() {
               className="object-cover rounded-md w-full"
             />
             <h2 className="text-base font-semibold mt-2 text-center">Nike Air Max Pulse</h2>
-            <p className="text-sm text-gray-600 text-center">Men's Shoes</p>
+            <p className="text-sm text-gray-600 text-center">{`Men's Shoes`}</p>
             <p className="text-lg font-bold mt-1 text-center">₹ 13 995</p>
           </div>
 
@@ -47,7 +47,7 @@ export default function GearUp() {
               className="object-cover rounded-md w-full"
             />
             <h2 className="text-base font-semibold mt-2 text-center">Nike Air Max 97</h2>
-            <p className="text-sm text-gray-600 text-center">Women's Shoes</p>
+            <p className="text-sm text-gray-600 text-center">{`Women's Shoes`}</p>
             <p className="text-lg font-bold mt-1 text-center">₹ 13 995</p>
 
             {/* Second Slider Arrows on Top of Image 2 */}
