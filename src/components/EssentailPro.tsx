@@ -16,6 +16,13 @@ export default function Essentials() {
     },
   ];
 
+  const footerLinks = [
+    { title: "Icons", items: ["Air Force 1", "Huarache", "Air Max 90", "Air Max 95"] },
+    { title: "Shoes", items: ["All Shoes", "Custom Shoes", "Jordan Shoes", "Running Shoes"] },
+    { title: "Clothing", items: ["All Clothing", "Modest Wear", "Hoodies & Pullovers", "Shirts & Tops"] },
+    { title: "Kids'", items: ["Infant & Toddler Shoes", "Kids' Shoes", "Kids' Jordan Shoes", "Kids' Basketball Shoes"] },
+  ];
+
   return (
     <div className="bg-white py-10">
       {/* Section Header */}
@@ -24,7 +31,10 @@ export default function Essentials() {
       {/* Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-16">
         {categories.map((category, index) => (
-          <div key={index} className="relative group overflow-hidden rounded-lg">
+          <div
+            key={index}
+            className="relative group overflow-hidden rounded-lg shadow-lg"
+          >
             {/* Image */}
             <div className="h-[300px] md:h-[400px] relative">
               <Image
@@ -42,12 +52,25 @@ export default function Essentials() {
                 {category.title}
               </button>
             </div>
-            
           </div>
-          
+        ))}
+      </div>
+
+      {/* Footer Links */}
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-6 px-6 md:px-16">
+        {footerLinks.map((link, index) => (
+          <div key={index}>
+            <h3 className="text-lg font-semibold mb-4">{link.title}</h3>
+            <ul className="space-y-2">
+              {link.items.map((item, idx) => (
+                <li key={idx} className="text-gray-600 hover:text-black">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
     </div>
-    
   );
 }
