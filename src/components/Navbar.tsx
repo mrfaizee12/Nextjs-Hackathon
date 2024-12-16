@@ -20,10 +20,10 @@ export default function MainHeader() {
 
         {/* Center - Navigation Links */}
         <nav className="hidden md:flex space-x-6 ml-4">
-          <Link href="#" className="text-sm font-medium text-black hover:text-gray-800">
+          <Link href="/" className="hover:underline text-sm font-medium text-black hover:text-gray-800">
             New & Featured
           </Link>
-          <Link href="#" className="text-sm font-medium text-black hover:text-gray-800">
+          <Link href="/cart" className="hover:underline text-sm font-medium text-black hover:text-gray-800">
             Men
           </Link>
           <Link href="#" className="text-sm font-medium text-black hover:text-gray-800">
