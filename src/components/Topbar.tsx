@@ -29,7 +29,7 @@ export default function Header() {
         {/* Right Side - Links */}
         <div className="flex items-center space-x-3 md:space-x-4 text-xs md:text-sm text-black">
           <Link
-            href="/"
+            href="/locate"
             className="hover:text-gray-800 focus:text-gray-800 transition"
           >
             Find a Store
