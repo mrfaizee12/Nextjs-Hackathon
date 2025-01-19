@@ -2,7 +2,7 @@
 import { SlMagnifier } from "react-icons/sl";
 // import { IoFilterSharp } from "react-icons/io5";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/image";   
 
 const stores = [
   {
